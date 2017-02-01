@@ -28,7 +28,7 @@ router.get('/', function(req, res) {
 	res.json({'message': 'first'});
 })
 
-router.router('/users')
+router.route('/users')
 	
 	.post(function(req, res){
 		var user = new User();
@@ -41,6 +41,7 @@ router.router('/users')
 			res.json({message: 'User created Successfully.'})
 		})
 	})
+
 
 router.route('/books')
 
